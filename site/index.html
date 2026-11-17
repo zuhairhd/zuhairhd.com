@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>زهير درويش | تحليل سياسي واقتصادي</title>
-<meta name="description" content="أشرح ما يحدث في منطقتنا والعالم بهدوء وبمصادر. سياسة · اقتصاد · تقنية، من مسقط.">
+<title>زهير درويش | تأملات فيما يجري</title>
+<meta name="description" content="أتأمل ما يجري في منطقتنا والعالم وأحاول أن أفهمه، وأشارك ما أتعلمه بهدوء مع ذكر المصادر. من مسقط.">
 <meta name="theme-color" content="#0f1b2d">
 <!-- عدّل الرابط إلى نطاقك بعد التأكد منه -->
 <link rel="canonical" href="https://zuhairhd.com/">
 <meta property="og:type" content="profile">
-<meta property="og:title" content="زهير درويش | تحليل سياسي واقتصادي">
-<meta property="og:description" content="أشرح ما يحدث في منطقتنا والعالم بهدوء وبمصادر.">
-<meta property="og:image" content="https://zuhairhd.com/assets/og-image.png">
+<meta property="og:title" content="زهير درويش | تأملات فيما يجري">
+<meta property="og:description" content="أتأمل ما يجري في منطقتنا والعالم وأحاول أن أفهمه.">
+<meta property="og:image" content="https://zuhairhd.com/assets/og-image.png?v=2">
 <meta property="og:url" content="https://zuhairhd.com/">
 <meta property="og:locale" content="ar_AR">
 <meta property="og:image:width" content="1200">
@@ -79,6 +79,20 @@
   .s{color:var(--muted);font-size:.84rem;display:block}
   .arrow{color:var(--muted);font-size:1.1rem}
   .badge{display:inline-block;font-size:.72rem;font-weight:600;color:var(--accent);background:var(--accent-soft);border-radius:999px;padding:1px 8px;margin-inline-start:6px;vertical-align:middle}
+  /* بطاقة مميزة: Future Smart Support */
+  a.feature{
+    position:relative;display:block;padding:20px 20px 18px;border-radius:var(--radius);text-decoration:none;
+    color:#eef2f7;background:linear-gradient(135deg,#0f1b2d 0%,#1a2d48 100%);
+    border:1px solid #d4a457;box-shadow:0 8px 24px rgba(15,27,45,.28);overflow:hidden;
+    transition:transform .15s ease, box-shadow .15s ease;margin-bottom:10px;
+  }
+  a.feature::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:linear-gradient(90deg,#b8873b,#e9d3a8,#b8873b)}
+  a.feature:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(15,27,45,.36)}
+  .feature .kicker{display:inline-block;font-size:.74rem;font-weight:600;color:#0f1b2d;background:#d4a457;border-radius:999px;padding:2px 10px;margin-bottom:10px}
+  .feature .ft{display:block;font-size:1.2rem;font-weight:700;margin-bottom:4px}
+  .feature .fd{display:block;color:#b9c4d2;font-size:.92rem;margin-bottom:14px}
+  .feature .fbtn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:.95rem;color:#0f1b2d;background:#e9d3a8;border-radius:12px;padding:9px 16px}
+  .feature .dom{display:block;color:#d4a457;font-size:.8rem;margin-top:10px;direction:ltr;text-align:right}
   footer{text-align:center;color:var(--muted);font-size:.8rem;margin-top:40px}
   footer a{color:inherit}
   @media (prefers-reduced-motion: reduce){ *{transition:none!important} }
@@ -91,8 +105,8 @@
     <!-- صورة الملف الشخصي: assets/avatar.jpg (مربعة، 400×400 على الأقل) -->
     <img class="avatar" src="assets/avatar.jpg" alt="زهير درويش" width="112" height="112" onerror="this.outerHTML='<div class=&quot;avatar&quot; style=&quot;display:grid;place-items:center;font-size:44px;font-weight:700;color:var(--accent)&quot;>ز</div>'">
     <h1>زهير درويش</h1>
-    <p class="tag">تحليل سياسي واقتصادي</p>
-    <p class="bio">أشرح ما يحدث في منطقتنا والعالم بهدوء وبمصادر.<br>سياسة · اقتصاد · تقنية، بعين محترف تقنية. من مسقط 🇴🇲</p>
+    <p class="tag">تأملات فيما يجري</p>
+    <p class="bio">أتأمل ما يجري في منطقتنا والعالم وأحاول أن أفهمه.<br>أشارك ما أتعلمه بهدوء، مع ذكر المصادر. من مسقط 🇴🇲</p>
     <div class="stats" aria-label="أرقام الحساب">
       <span><b>+27 ألف</b>متابع</span>
       <span><b>+3.8 مليون</b>مشاهدة في سنة</span>
@@ -181,6 +195,13 @@
 
   <section>
     <h2>للأعمال</h2>
+    <a class="feature" href="https://futuresmartsupport.com" rel="noopener">
+      <span class="kicker">شركتي</span>
+      <span class="ft">Future Smart Support</span>
+      <span class="fd">موظف استقبال هاتفي بالذكاء الاصطناعي يرد على اتصالات عملائك بالعربية على مدار الساعة.</span>
+      <span class="fbtn">زر الموقع <span aria-hidden="true">‹</span></span>
+      <span class="dom">futuresmartsupport.com</span>
+    </a>
     <div class="list">
       <a class="item" href="https://www.instagram.com/fss.hq/" rel="noopener">
         <span class="ico" aria-hidden="true">📞</span>
