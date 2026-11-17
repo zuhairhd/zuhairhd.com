@@ -16,20 +16,43 @@
 <meta property="og:locale" content="ar_AR">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="زهير درويش — تأملات فيما يجري">
+<meta name="twitter:image:alt" content="زهير درويش — تأملات فيما يجري">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" href="assets/fonts/plex-arabic-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/plex-arabic-700.woff2" as="font" type="font/woff2" crossorigin>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "زهير درويش",
+  "alternateName": "zuhairhd",
+  "url": "https://zuhairhd.com/",
+  "image": "https://zuhairhd.com/assets/avatar.webp",
+  "description": "أتأمل ما يجري في منطقتنا والعالم وأحاول أن أفهمه، وأشارك ما أتعلمه بهدوء مع ذكر المصادر.",
+  "homeLocation": { "@type": "Place", "name": "مسقط، عُمان" },
+  "sameAs": ["https://www.instagram.com/zuhairhd/"],
+  "worksFor": { "@type": "Organization", "name": "Future Smart Support", "url": "https://futuresmartsupport.com" }
+}
+</script>
 <style>
+  /* IBM Plex Sans Arabic مستضاف محلياً (SIL OFL 1.1 — assets/fonts/OFL.txt) */
+  @font-face{font-family:"IBM Plex Sans Arabic";font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/plex-arabic-400.woff2) format("woff2");unicode-range:U+0600-06FF,U+0750-077F,U+0870-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC}
+  @font-face{font-family:"IBM Plex Sans Arabic";font-style:normal;font-weight:600;font-display:swap;src:url(assets/fonts/plex-arabic-600.woff2) format("woff2");unicode-range:U+0600-06FF,U+0750-077F,U+0870-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC}
+  @font-face{font-family:"IBM Plex Sans Arabic";font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/plex-arabic-700.woff2) format("woff2");unicode-range:U+0600-06FF,U+0750-077F,U+0870-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC}
+  @font-face{font-family:"IBM Plex Sans Arabic";font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/plex-latin-400.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+  @font-face{font-family:"IBM Plex Sans Arabic";font-style:normal;font-weight:600;font-display:swap;src:url(assets/fonts/plex-latin-600.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+  @font-face{font-family:"IBM Plex Sans Arabic";font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/plex-latin-700.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
   :root{
     --bg:#f6f3ee; --card:#ffffff; --ink:#14202f; --muted:#5d6b7a; --line:#e6e0d6;
     --brand:#0f1b2d; --accent:#b8873b; --accent-soft:#f3e8d6; --ig1:#f58529; --ig2:#dd2a7b; --ig3:#8134af;
+    --accent-ink:#8a6223; /* نص ذهبي بتباين ≥ 4.5:1 على الخلفية الفاتحة */
     --radius:16px;
   }
   @media (prefers-color-scheme: dark){
-    :root{ --bg:#0b1320; --card:#121d2e; --ink:#eef2f7; --muted:#9aa8b8; --line:#1f2c40; --brand:#e9d3a8; --accent:#d4a457; --accent-soft:#2a2418; }
+    :root{ --bg:#0b1320; --card:#121d2e; --ink:#eef2f7; --muted:#9aa8b8; --line:#1f2c40; --brand:#e9d3a8; --accent:#d4a457; --accent-soft:#2a2418; --accent-ink:#d4a457; }
   }
   *{box-sizing:border-box}
   html,body{margin:0}
@@ -46,7 +69,7 @@
     border:3px solid var(--card);box-shadow:0 0 0 2px var(--accent);background:var(--accent-soft);
   }
   h1{font-size:1.55rem;margin:0;font-weight:700;letter-spacing:0}
-  .tag{color:var(--accent);font-weight:600;margin:2px 0 10px;font-size:1rem}
+  .tag{color:var(--accent-ink);font-weight:600;margin:2px 0 10px;font-size:1rem}
   .bio{color:var(--muted);margin:0 auto 18px;max-width:420px;font-size:.98rem}
   .stats{display:flex;justify-content:center;gap:22px;margin:0 0 20px;color:var(--muted);font-size:.86rem}
   .stats b{display:block;color:var(--ink);font-size:1.1rem}
@@ -78,7 +101,7 @@
   .t{font-weight:600;font-size:1rem;display:block}
   .s{color:var(--muted);font-size:.84rem;display:block}
   .arrow{color:var(--muted);font-size:1.1rem}
-  .badge{display:inline-block;font-size:.72rem;font-weight:600;color:var(--accent);background:var(--accent-soft);border-radius:999px;padding:1px 8px;margin-inline-start:6px;vertical-align:middle}
+  .badge{display:inline-block;font-size:.72rem;font-weight:600;color:var(--accent-ink);background:var(--accent-soft);border-radius:999px;padding:1px 8px;margin-inline-start:6px;vertical-align:middle}
   /* بطاقة مميزة: Future Smart Support */
   a.feature{
     position:relative;display:block;padding:20px 20px 18px;border-radius:var(--radius);text-decoration:none;
@@ -102,12 +125,12 @@
 <main class="wrap">
 
   <header>
-    <!-- صورة الملف الشخصي: assets/avatar.jpg (مربعة، 400×400 على الأقل) -->
-    <img class="avatar" src="assets/avatar.jpg" alt="زهير درويش" width="112" height="112" onerror="this.outerHTML='<div class=&quot;avatar&quot; style=&quot;display:grid;place-items:center;font-size:44px;font-weight:700;color:var(--accent)&quot;>ز</div>'">
+    <!-- صورة الملف الشخصي: assets/avatar.webp (224×224، مولّدة من avatar.jpg). alt فارغ لأن الاسم في h1 تحتها مباشرة -->
+    <img class="avatar" src="assets/avatar.webp" alt="" width="112" height="112" fetchpriority="high" onerror="this.outerHTML='<div class=&quot;avatar&quot; style=&quot;display:grid;place-items:center;font-size:44px;font-weight:700;color:var(--accent)&quot;>ز</div>'">
     <h1>زهير درويش</h1>
     <p class="tag">تأملات فيما يجري</p>
     <p class="bio">أتأمل ما يجري في منطقتنا والعالم وأحاول أن أفهمه.<br>أشارك ما أتعلمه بهدوء، مع ذكر المصادر. من مسقط 🇴🇲</p>
-    <div class="stats" aria-label="أرقام الحساب">
+    <div class="stats" role="group" aria-label="أرقام الحساب">
       <span><b>+27 ألف</b>متابع</span>
       <span><b>+3.8 مليون</b>مشاهدة في سنة</span>
     </div>
@@ -167,12 +190,12 @@
       </a>
       <a class="item" href="https://drive.google.com/file/d/1EY_U5KrXGM7NvBdI0h4vWJJuzczy4bfp/view" rel="noopener">
         <span class="ico" aria-hidden="true">📄</span>
-        <span class="txt"><span class="t">Clean Break: استراتيجية جديدة لتأمين المملكة</span><span class="s">PDF · مترجم للعربية</span></span>
+        <span class="txt"><span class="t"><span lang="en">Clean Break</span>: استراتيجية جديدة لتأمين المملكة</span><span class="s">PDF · مترجم للعربية</span></span>
         <span class="arrow" aria-hidden="true">‹</span>
       </a>
       <a class="item" href="https://drive.google.com/file/d/1mBWBhyKR153oXN4_7qkkoPRGq_p57Y7F/view" rel="noopener">
         <span class="ico" aria-hidden="true">📄</span>
-        <span class="txt"><span class="t">Clean Break: A New Strategy for Securing the Realm</span><span class="s">PDF · النص الإنجليزي الأصلي</span></span>
+        <span class="txt"><span class="t" lang="en">Clean Break: A New Strategy for Securing the Realm</span><span class="s">PDF · النص الإنجليزي الأصلي</span></span>
         <span class="arrow" aria-hidden="true">‹</span>
       </a>
       <a class="item" href="https://drive.google.com/file/d/1kaIRxnuSrK51Jvq6-BFsHYrRlnii8mpH/view" rel="noopener">
@@ -182,7 +205,7 @@
       </a>
       <a class="item" href="https://drive.google.com/file/d/1UfPoprCEwld9nhF6Ts7V1Ywp-Zv_0LSU/view" rel="noopener">
         <span class="ico" aria-hidden="true">📄</span>
-        <span class="txt"><span class="t">HK Camp Meal Programme</span><span class="s">PDF · English</span></span>
+        <span class="txt"><span class="t" lang="en">HK Camp Meal Programme</span><span class="s" lang="en">PDF · English</span></span>
         <span class="arrow" aria-hidden="true">‹</span>
       </a>
       <a class="item" href="https://archive.org/details/Almissiri_Abdel_wahab" rel="noopener">
@@ -197,7 +220,7 @@
     <h2>للأعمال</h2>
     <a class="feature" href="https://futuresmartsupport.com" rel="noopener">
       <span class="kicker">شركتي</span>
-      <span class="ft">Future Smart Support</span>
+      <span class="ft" lang="en">Future Smart Support</span>
       <span class="fd">موظف استقبال هاتفي بالذكاء الاصطناعي يرد على اتصالات عملائك بالعربية على مدار الساعة.</span>
       <span class="fbtn">زر الموقع <span aria-hidden="true">‹</span></span>
       <span class="dom">futuresmartsupport.com</span>
@@ -205,7 +228,7 @@
     <div class="list">
       <a class="item" href="https://www.instagram.com/fss.hq/" rel="noopener">
         <span class="ico" aria-hidden="true">📞</span>
-        <span class="txt"><span class="t">مُجيب: المساعد الهاتفي الذكي للأعمال</span><span class="s">Future Smart Support · @fss.hq</span></span>
+        <span class="txt"><span class="t">مُجيب: المساعد الهاتفي الذكي للأعمال</span><span class="s" lang="en">Future Smart Support · @fss.hq</span></span>
         <span class="arrow" aria-hidden="true">‹</span>
       </a>
       <!-- أضف بريد التواصل المهني هنا إن أردت: mailto:... -->
